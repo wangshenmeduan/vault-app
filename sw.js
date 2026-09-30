@@ -1,4 +1,4 @@
-const CACHE = 'vault-v9';
+const CACHE = 'vault-v10';
 const PRECACHE = ['./', './index.html'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
